@@ -1,3 +1,10 @@
+# Task for interns
+
+[![Build Status](https://semaphoreci.com/api/v1/wowonrails/task-for-interns/branches/master/shields_badge.svg)](https://semaphoreci.com/wowonrails/task-for-interns)
+[![Maintainability](https://api.codeclimate.com/v1/badges/1744dcb0311b297d7c47/maintainability)](https://codeclimate.com/github/wowonrails/task-for-interns/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/1744dcb0311b297d7c47/test_coverage)](https://codeclimate.com/github/wowonrails/task-for-interns/test_coverage)
+
+
 Критерии:
 
 - Использовать Rails-Base как основу проекта
