@@ -60,6 +60,7 @@ group :test do
   gem "guard-rspec"
   gem "launchy"
   gem "poltergeist"
+  gem "pundit-matchers"
   gem "rspec-its"
   gem "shoulda-matchers"
   gem "terminal-notifier-guard"
@@ -74,8 +75,6 @@ group :development, :test do
   gem "byebug"
   gem "coffeelint"
   gem "dotenv-rails"
-  gem "factory_girl_rails"
-  gem "faker"
   gem "jasmine", "> 2.0"
   gem "jasmine-jquery-rails"
   gem "pry-rails"
@@ -84,6 +83,11 @@ group :development, :test do
   gem "rubocop-rspec", require: false
   gem "scss_lint", require: false
   gem "slim_lint", require: false
+end
+
+group :staging, :development, :test do
+  gem "factory_girl_rails"
+  gem "faker"
 end
 
 group :development do

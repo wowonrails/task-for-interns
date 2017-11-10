@@ -1,0 +1,17 @@
+.row
+  .columns
+    h2 = title("Feedbacks")
+
+.row
+  .medium-12.columns
+    table class="hover"
+      thead
+        tr
+          th Name
+          th E-mail
+          th Text
+      tbody
+        = render feedbacks
+
+    .pagination.text-center
+      = paginate feedbacks
