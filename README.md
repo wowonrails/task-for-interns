@@ -4,8 +4,11 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/1744dcb0311b297d7c47/maintainability)](https://codeclimate.com/github/wowonrails/task-for-interns/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/1744dcb0311b297d7c47/test_coverage)](https://codeclimate.com/github/wowonrails/task-for-interns/test_coverage)
 
+## Description
 
-Критерии:
+Feedbacks generator with email notifications
+
+## Acceptance Criteria
 
 - Использовать Rails-Base как основу проекта
 - Результат должен быть задеплоен на Heroku
@@ -48,3 +51,30 @@ As Admin User I want to search through feedbacks
   Then I see feedback from Michael
   And I do not see feedback from John Smith
 ```
+
+## Quick Start
+
+```bash
+# clone repo
+git clone git@github.com:wowonrails/task-for-interns.git
+cd task-for-interns
+
+# run setup script
+bin/setup
+
+# configure ENV variables in .env
+vim .env
+
+# run server on 5000 port
+bin/server
+```
+
+## Scripts
+
+* `bin/setup` - setup required gems and migrate db if needed
+* `bin/quality` - run brakeman and rails_best_practices for the app
+* `bin/ci` - should be used in the CI to run specs
+
+## Staging
+
+* https://task-for-interns.herokuapp.com/
