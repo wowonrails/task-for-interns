@@ -5,12 +5,6 @@ GIT
     rack-mini-profiler (0.10.2)
       rack (>= 1.2.0)
 
-GIT
-  remote: https://github.com/fs/fragments.js
-  revision: 4d786b7a53ccc487dec3008e789aaaf14b8b0c5d
-  specs:
-    fragments.js (0.0.1)
-
 GEM
   remote: https://rubygems.org/
   remote: https://rails-assets.org/
@@ -481,7 +475,6 @@ DEPENDENCIES
   formulaic
   foundation-icons-sass-rails
   foundation-rails
-  fragments.js!
   google-analytics-rails
   guard-rspec
   health_check
