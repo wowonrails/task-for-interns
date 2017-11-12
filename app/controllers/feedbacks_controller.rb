@@ -7,6 +7,9 @@ class FeedbacksController < ApplicationController
 
   def create
     feedback.save
+
+    SendFeedbackNotificationWorker.perform_async(feedback.id)
+
     respond_with feedback, location: root_path
   end
 

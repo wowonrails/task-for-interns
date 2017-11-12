@@ -1,0 +1,9 @@
+= simple_form_for :feedbacks, { url: feedbacks_search_path,
+                                method: :get,
+                                remote: true,
+                                data: { behavior: "fragments" } } do |f|
+  .input-group
+    = f.input_field :search, label: false, class: "input-group-field"
+
+    .input-group-button
+      = f.button :submit

@@ -10,8 +10,13 @@ en:
       # html: '<abbr title="required">*</abbr>'
     error_notification:
       default_message: 'Please review the problems below:'
+    placeholders:
+      feedbacks:
+        search: 'Enter either a name, or e-mail, or text'
 
   helpers:
     submit:
       feedback:
-        create: "Submit"
+        create: 'Submit feedback'
+      feedbacks:
+        submit: 'Search'
