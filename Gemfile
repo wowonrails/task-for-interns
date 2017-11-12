@@ -33,6 +33,7 @@ gem "decent_exposure"
 gem "devise"
 gem "draper"
 gem "flamegraph"
+gem "fragments.js", git: "https://github.com/fs/fragments.js"
 gem "google-analytics-rails"
 gem "health_check"
 gem "interactor"
@@ -47,21 +48,26 @@ gem "rollbar"
 gem "seedbank"
 gem "stackprof"
 
+# Background jobs
+gem "sidekiq"
+
 group :staging, :production do
   gem "newrelic_rpm"
 end
 
 group :test do
   gem "capybara"
+  gem "capybara-email"
+  gem "climate_control"
   gem "codeclimate-test-reporter", require: false
   gem "database_cleaner"
-  gem "email_spec"
   gem "formulaic"
   gem "guard-rspec"
   gem "launchy"
   gem "poltergeist"
   gem "pundit-matchers"
   gem "rspec-its"
+  gem "rspec-sidekiq"
   gem "shoulda-matchers"
   gem "terminal-notifier-guard"
   gem "webmock", require: false

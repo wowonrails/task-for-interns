@@ -42,4 +42,8 @@ Rails.application.configure do
 
   # Run specs in order
   config.active_support.test_order = :sorted
+
+  # Don't fallback to assets pipeline
+  config.assets.digest = false
+  config.assets.compress = false
 end

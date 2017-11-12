@@ -10,10 +10,12 @@
     "RACK_ENV": { "required": true },
     "RAILS_ENV": { "required": true },
     "RAILS_SERVE_STATIC_FILES": { "required": true },
+    "ADMIN_EMAIL": { "required": true },
     "SECRET_KEY_BASE": { "generator": "secret" }
   },
   "addons": [
     "heroku-postgresql",
-    "sendgrid"
+    "sendgrid",
+    "heroku-redis"
   ]
 }

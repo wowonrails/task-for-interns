@@ -1,19 +1,11 @@
 require "rails_helper"
 
 describe FeedbackPolicy do
-  subject { described_class.new(user, :feedback) }
-
-  let(:user) { create(:user) }
-
-  context "user is not admin" do
-    it { is_expected.to forbid_action(:index) }
+  describe "#index" do
+    include_examples "granted only for admin", :index, :feedback
   end
 
-  context "user is admin" do
-    before do
-      user.admin!
-    end
-
-    it { is_expected.to permit_action(:index) }
+  describe "#show" do
+    include_examples "granted only for admin", :show, :feedback
   end
 end

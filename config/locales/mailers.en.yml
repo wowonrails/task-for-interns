@@ -1,0 +1,4 @@
+en:
+  feedback_mailer:
+    notify:
+      subject: '[task-for-interns.com] new feedback!'

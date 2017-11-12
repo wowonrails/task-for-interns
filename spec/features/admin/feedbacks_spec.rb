@@ -1,13 +1,9 @@
 require "rails_helper"
 
 feature "Feedbacks" do
-  include_context "current user signed in"
+  include_context "admin signed in"
 
   let!(:feedbacks) { create_list(:feedback, 3) }
-
-  background do
-    current_user.admin!
-  end
 
   scenario "Admin views feedbacks" do
     visit feedbacks_path

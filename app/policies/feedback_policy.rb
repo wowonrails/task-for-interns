@@ -1,5 +1,11 @@
 class FeedbackPolicy < ApplicationPolicy
+  delegate :admin?, to: :user
+
   def index?
-    user.admin?
+    admin?
+  end
+
+  def show?
+    index?
   end
 end

@@ -5,7 +5,7 @@ describe UserDecorator do
 
   let(:user) { build(:user) }
 
-  scenario "has a full name with email that matches" do
+  it "#full_name_with_email" do
     expect(decorated_user.full_name_with_email).to eq("#{user.full_name} (#{user.email})")
   end
 end

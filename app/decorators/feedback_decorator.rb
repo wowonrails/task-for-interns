@@ -1,3 +1,7 @@
 class FeedbackDecorator < ApplicationDecorator
-  delegate :name, :email, :text
+  delegate_all
+
+  def name_with_email
+    "#{name} (#{email})"
+  end
 end
