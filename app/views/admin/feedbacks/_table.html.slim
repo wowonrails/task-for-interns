@@ -1,12 +1,11 @@
-div data-fragment-id="feedbacks-table"
-  table class="hover"
-    thead
-      tr
-        th Name
-        th E-mail
-        th Text
-    tbody
-      = render feedbacks
+table class="hover"
+  thead
+    tr
+      th Name
+      th E-mail
+      th Text
+  tbody
+    = render feedbacks
 
-  .pagination.text-center
-    = paginate feedbacks
+.pagination.text-center
+  = paginate feedbacks

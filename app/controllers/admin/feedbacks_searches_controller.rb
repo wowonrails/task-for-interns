@@ -4,8 +4,6 @@ module Admin
 
     def show
       authorize :feedback
-
-      render "admin/feedbacks/_table", feedbacks: feedbacks, layout: false
     end
 
     private
